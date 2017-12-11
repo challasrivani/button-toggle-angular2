@@ -1,0 +1,19 @@
+
+<mat-button-toggle [checked]="myFlagForIsBold" (change)="myFlagForIsBold = $event.source.checked" >Bold</mat-button-toggle>
+<mat-button-toggle [checked]="myFlagForIsItalic" (change)="myFlagForIsItalic = $event.source.checked">Italic</mat-button-toggle>
+<mat-button-toggle [checked]="myFlagForIsUnderline" (change)="myFlagForIsUnderline = $event.source.checked">Underline</mat-button-toggle>
+
+
+<div [ngClass]="{beitalic: myFlagForIsItalic, bebold: myFlagForIsBold, beunderline: myFlagForIsUnderline}">Text To Apply</div>
+
+Model:<br/>
+Bold toggle:{{myFlagForIsBold}}
+<br/>
+Italic toggle:{{myFlagForIsItalic}}
+<br/>
+Underline toggle:{{myFlagForIsUnderline}}
+<br/>
+
+<!-- Copyright 2017 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->

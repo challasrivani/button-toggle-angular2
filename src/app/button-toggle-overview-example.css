@@ -1,0 +1,10 @@
+/** No CSS for this example */
+.bebold{
+  font-weight: bold;
+}
+.beitalic{
+  font-style: italic;
+}
+.beunderline{
+  text-decoration: underline;
+}
